@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock-Paper-Scissors</title>
+    <style></style>
+  </head>
+  <body>
+
+    <!-- - have 3 images with `id`s in your HTML and one div with an `id` that can be used to display text -->
+
+    <img id='rock' src="">
+    <img id='paper' src="">
+    <img id='scissors' src="">
+    <div id='text'></div>
+
+
+    <script>
+      // - In javascript, you'll generate a random number and use that random number to
+      // determine what the "computer" selection will be
+      function randomChoice(){
+        // - Generate a random number and use that to create a 'computer' selection
+        //   - 0 = rock, 1 = paper, 2 = scissors
+        var computer = ["rock", "paper", "scissors"];
+        var randomNumber = Math.floor(Math.random() * computer.length);
+      }
+      // - Use logic statements (i.e. `if()`) to determine whether the user wins, loses,
+      // or draws
+      // var winLosedraw = document.getElementById('img');
+        if (user == randomNumber) {
+          console.log('draw');
+        } else if (user == 0 && randomNumber == 1) {
+          console.log('Paper covers your rock! you lose');
+        } else if (user == 0 && randomNumber == 2) {
+          console.log('Your rock crushes scissors! you win');
+        } else if (user == 1 && randomNumber == 2) {
+          console.log('Scissors cuts your paper! you lose');
+        } else if (user == 1 && randomNumber == 0) {
+          console.log('Your paper covers rock! you win');
+        } else if (user == 2 && randomNumber == 0) {
+          console.log('Your scissors were crushed by rock! you lose');
+        } else if (user == 2 && randomNumber == 1) {
+          console.log('Your scissors cut paper! you win');
+        }
+      // - Update the screen with the result
+          alert{"$"}
+      // - In javascript, select all of your images and loop through them to attach click listeners
+        var images = document.getElementsByTagName('img');
+        document.addEventListener('click',selectImage);
+        for(var i = 0; i < images.length; i++){
+          var image = images[i];
+        }
+      // - Save the users selection in a variable using the `event` object
+        function selectImage(event){
+          console.log(event);
+        }
+
+
+      // - Use 3 if statements with nested if/elseif/else statements to determine the winner
+      // - Use the innerText property of the DOM node for your result div to let the user know if they won or lost or tied
+
+    </script>
+  </body>
+</html>
